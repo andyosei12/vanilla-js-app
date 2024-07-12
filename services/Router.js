@@ -10,7 +10,7 @@ const Router = {
     Router.go(location.pathname);
   },
   go: (route, addToHistory = true) => {
-    console.log(`going to ${route}`)
+    console.log(`going into ${route}`)
 
     if (addToHistory) {
       history.pushState({ route }, '', route);
